@@ -1,0 +1,58 @@
+/* สไตล์พื้นฐานสำหรับหน้าจอ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* เปลี่ยนฟอนต์ใหม่ */
+    text-align: center;
+    background-color: #FFFAF0; /* เปลี่ยนสีพื้นหลัง */
+    margin: 0; /* ลบระยะห่าง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* เต็มความสูงของหน้าจอ */
+}
+
+/* สไตล์ของปุ่ม */
+.button {
+    padding: 20px 40px; /* เพิ่มขนาดของปุ่ม */
+    font-size: 20px; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    margin: 20px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* มุมโค้งของปุ่ม */
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s; /* เพิ่ม transition ให้กับเงา */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กับปุ่ม */
+}
+
+/* ปุ่มสีเขียว */
+#ching-button {
+    background-color: #4CAF50;
+}
+
+#ching-button:hover {
+    background-color: #45a049; /* เปลี่ยนสีเมื่อเมาส์ชี้ */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เงาเข้มขึ้นเมื่อเมาส์ชี้ */
+}
+
+/* ปุ่มสีน้ำเงิน */
+#chap-button {
+    background-color: #2196F3;
+}
+
+#chap-button:hover {
+    background-color: #1e88e5; /* เปลี่ยนสีเมื่อเมาส์ชี้ */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เงาเข้มขึ้นเมื่อเมาส์ชี้ */
+}
+
+/* การเปลี่ยนสีปุ่มเมื่อเมาส์ชี้ */
+.button:hover {
+    opacity: 0.9; /* เพิ่มความโปร่งใสเล็กน้อยเมื่อเมาส์ชี้ */
+}
+
+/* ตำแหน่งของปุ่ม */
+.container {
+    display: flex;
+    justify-content: space-around; /* จัดปุ่มห่างกัน */
+    align-items: center;
+    width: 50%; /* กำหนดขนาดของ container */
+}
+ 
